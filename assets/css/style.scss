@@ -20,6 +20,7 @@ body {
 .homepage-content {
     text-align: center;
     position: relative; /* Added position:relative to allow positioning of ::after pseudo-element */
+    min-height: 300px; /* Added minimum height to ensure visibility */
 }
 
 .homepage-content::after {
@@ -28,7 +29,7 @@ body {
     top: 2cm; /* Adjust the distance from the top */
     left: 0;
     width: 100%;
-    height: 5px; /* Adjust the height of the stripe */
+    height: 10px; /* Adjust the height of the stripe */
     background: linear-gradient(to right, purple, red); /* Adjust colors as needed */
     animation: hueShift 5s infinite alternate; /* Adjust animation duration as needed */
 }
