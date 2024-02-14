@@ -19,10 +19,10 @@ h1retro {
   // main background is gradient
   display: block;
   position: relative;
-  font-size: $font-size;
+  font-size: 34px;
   background: linear-gradient(to bottom,  #00f2ff 0%,#e2fbff 50%,#0a343f 51%,#0094f7 100%);
   background-blend-mode: multiply;
-  background-size: 10px $font-size;
+  background-size: 10px;
   background-repeat: repeat;
   line-height: 1;
   -webkit-background-clip: text;
