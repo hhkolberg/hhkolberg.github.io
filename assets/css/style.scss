@@ -20,6 +20,30 @@ body {
   margin: 100px;
 }
 
+.homepage-content {
+    text-align: center;
+}
+
+.homepage-content::after {
+    content: "";
+    position: absolute;
+    top: 2cm; /* Adjust the distance from the top */
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the stripe */
+    background: linear-gradient(to right, purple, red); /* Adjust colors as needed */
+    animation: hueShift 5s infinite alternate; /* Adjust animation duration as needed */
+}
+
+@keyframes hueShift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
 h1retro {
   // main background is gradient
   display: block;
