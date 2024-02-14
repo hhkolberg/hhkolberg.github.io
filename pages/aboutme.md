@@ -27,43 +27,57 @@
 
 ---------
 
+# Skills
+
+## Programming and Scripting Languages
+- PHP
+- Python
+- JavaScript (JS)
+- Bash
+- PowerShell
+
+## Web Technologies
+- HTML
+- CSS
+- RESTful APIs
+- JSON
+
+## Tools
+- BurpSuite
+- Nmap
+- Metasploit
+- Gobuster
+- SQLmap
+- InsightVM
+- and so on..
+
+## Processes
+- Process Developement
+- Six Sigma
+- Lean Mangagement 
+
+## Databases
+- MySQL
+- MongoDB
+
+## Version Control
+- GitHub
+
+## Operating Systems
+- Linux (Kali, Ubuntu, CentOS, Mint, PopOS, Parrot )
+- Windows (95, 98, 2000, XP, Vista, Win7, Win8, Win10, Win11)
+- Mac
+- KERNAL ;) 
+
+## Other
+- Shell Scripting
+- Regular Expressions (Regex)
+- Web Security Fundamentals
+- Network Fundamentals
+
 # MyPath
 
-TryHackMe Public Profile: https://tryhackme.com/p/KaliNetz
-
-# Coding and Scripting Skills
-
-Here are some of the coding and scripting languages I am proficient in:
-
-1. **PHP**
-   - Description: A server-side scripting language used for web development.
-   - Example: Developed a custom CMS for managing website content using PHP.
-
-2. **Python**
-   - Description: A versatile and powerful programming language commonly used for automation, web development, and data analysis.
-   - Example: Wrote scripts to automate data processing tasks in Python using Pandas library.
-
-3. **Bash**
-   - Description: A command-line shell and scripting language primarily used for system administration and automation on Unix-based systems.
-   - Example: Created Bash scripts for automating routine tasks such as file backups and system maintenance.
-
-4. **PowerShell**
-   - Description: A task automation and configuration management framework from Microsoft, primarily used on Windows systems.
-   - Example: Developed PowerShell scripts to automate deployment processes in a Windows server environment.
-
-5. **HTML**
-   - Description: The standard markup language for creating web pages and web applications.
-   - Example: Designed and implemented the front-end of a website using HTML and CSS.
-
-6. **CSS**
-   - Description: A style sheet language used for describing the presentation of a document written in HTML.
-   - Example: Styled the user interface of a web application using CSS frameworks like Bootstrap.
-
-7. **JavaScript (JS)**
-   - Description: A programming language commonly used for creating interactive web pages and web applications.
-   - Example: Implemented client-side form validation and dynamic content loading using JavaScript.
-
-Feel free to reach out if you have any questions about my skills or would like to see examples of my work!
-
-
+- TryHackMe Public Profile: https://tryhackme.com/p/KaliNetz
+- C EH
+- OSCP (Ongoing)
 
