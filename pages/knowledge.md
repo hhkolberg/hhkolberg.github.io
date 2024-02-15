@@ -6,4 +6,5 @@ With extensive experience in crafting documentation within cybersecurity, formul
 
 *This page is a testament to the efficacy of my knowledge management skills. It's designed to offer you a glimpse into my structured note-taking process and the quick-reference systems I employ during critical tasks such as Capture The Flag (CTF) competitions or penetration tests.*
 
-![kmgmt.png](https://github.com/hhkolberg/hhkolberg.github.io/blob/c57fbbed824e71d70e8a6b04456669149f8ba69b/pages/Kmgmt.png)
+![Image Alt Text](https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/c57fbbed824e71d70e8a6b04456669149f8ba69b/pages/Kmgmt.png)
+
