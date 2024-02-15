@@ -1,4 +1,4 @@
-![enter image description here](kmgmt.png)
+![kmgmt.png](https://github.com/hhkolberg/hhkolberg.github.io/blob/c57fbbed824e71d70e8a6b04456669149f8ba69b/pages/Kmgmt.png)
 
 # Knowledge
 
