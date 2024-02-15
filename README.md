@@ -2,7 +2,7 @@
 
 ## Here are some options to choose: 
 
-[AboutMe](/pages/aboutme.md) / Projects / [Knowledge](knowledge.md) / Cyber Security / WriteUps
+[AboutMe](/pages/aboutme.md) / Projects / [Knowledge](/pages/knowledge.md) / Cyber Security / WriteUps
 
 ----------------
 
