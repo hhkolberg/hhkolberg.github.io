@@ -1,4 +1,4 @@
-![enter image description here](kmgmt.png)
+![enter image description here]([kmgmt.png])
 
 # Knowledge
 
