@@ -10,6 +10,8 @@ With extensive experience in crafting documentation within cybersecurity, formul
 
 The core of my knowledge management lies in a meticulously crafted documentation system. It is engineered to be intuitive, allowing me to navigate through vast amounts of information with ease. The structure of my notes, be it for cybersecurity, coding or troubleshooting methodologies, is laid out to serve not only as a comprehensive knowledge repository but also as a quick reference under time constraints. 
 
+--------------
+
 As of today, there are five different templates that formes all of my knowledge in .md format. 
 **Down below are three examples:**
 
