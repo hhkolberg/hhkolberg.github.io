@@ -14,9 +14,10 @@ $font-family: 'Saira', sans-serif;
 $heading-font-family: 'ArcadeClassic', sans-serif;
 
 header img {
-    width: 100%; /* Make the image fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Adjust this value to control the maximum height */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border: 2px solid red; // Temporary border to check if styles are applied
 }
 
 // Global styles
