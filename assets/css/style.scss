@@ -13,6 +13,12 @@ $link-color: #5599ff;
 $font-family: 'Saira', sans-serif;
 $heading-font-family: 'ArcadeClassic', sans-serif;
 
+header img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Adjust this value to control the maximum height */
+}
+
 // Global styles
 body {
   background-color: $background-color;
