@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!-- Custom head content -->
+    <style>
+    /* Custom styles for the header image */
+        header img {
+        width: 100%; /* Make the image fill the container width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Control the maximum height */
+    }
+    </style>
     {% include head-custom.html %}
     <!-- SEO Tags -->
     {% seo %}
