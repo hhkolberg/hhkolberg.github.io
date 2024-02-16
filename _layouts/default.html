@@ -7,11 +7,33 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!-- Custom head content -->
     <style>
+    /* Ensure header is full-width and not affected by main content styles */
+    header {
+        width: 100%;
+        margin: 0 auto;
+        max-width: none; /* Overrides any max-width from .container styles */
+    }
+
     /* Custom styles for the header image */
-        header img {
+    header img {
         width: 100%; /* Make the image fill the container width */
         height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Control the maximum height */
     }
+
+    /* Adjusting header content alignment */
+    header .container {
+        text-align: left; /* Or any alignment you prefer */
+        padding: 0 20px; /* Adjusts padding for header content */
+    }
+
+    /* Specific styles for main content area */
+    .container {
+        text-align: center; /* Centers main content text */
+        max-width: 800px; /* Limits width of main content without affecting header */
+        margin: 0 auto; /* Centers the main content container */
+    }
+
     </style>
     {% include head-custom.html %}
     <!-- SEO Tags -->
