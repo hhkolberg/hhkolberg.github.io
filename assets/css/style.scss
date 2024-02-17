@@ -18,6 +18,8 @@ header {
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0; /* Adjust or remove padding as needed */
+    margin-bottom: 0; /* No margin below the header */
 
     .header-container {
         width: 100%;
