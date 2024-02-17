@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!-- Custom head content -->
     <style>
-    /* Custom styles for the header image */
-        header img {
-        width: 100%; /* Make the image fill the container width */
-        height: auto; /* Maintain aspect ratio */
-        max-width: none;
-    }
+    /* Ensuring the header has a minimum height and is full width */
+        header {
+        width: 100%;
+        min-height: 20vh; /* Adjust this value based on desired header size */
+        display: flex;
+        justify-content: center; /* Center-aligns header content horizontally */
+        align-items: center; /* Center-aligns header content vertically */
+        overflow: hidden; /* Prevents overflow of content outside the header */
+}
+
+    /* Adjusting the header image to be responsive and fill the header area */
+    header img {
+    max-height: 100%; /* Allows the image to scale within the header area */
+    width: auto; /* Maintains the image's aspect ratio */
+}
+
+    /* Style adjustments for the main content container */
+    .container {
+        text-align: left;
+        margin: auto;
+        max-width: 800px; /* Or your preferred max width */
+}
+
     </style>
     {% include head-custom.html %}
     <!-- SEO Tags -->
