@@ -6,21 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-    /* Ensuring the header has a fixed height and is full width */
-    header {
-        width: 100%; /* full width of the viewport */
-        height: 300px; /* fixed height of the header */
-        background: url('https://raw.githubusercontent.com/your-username/your-repo/your-branch/path-to-your-image') no-repeat center center;
-        background-size: cover; /* cover ensures the image fills the header */
-        overflow: hidden; /* ensures no spillover if the image is too big */
-    }
+        /* Custom styles */
+        body {
+            margin: 0; /* Ensure there's no default margin */
+            padding: 0; /* Ensure there's no default padding */
+        }
+
+        header {
+            width: 100%; /* Header takes the full width */
+            margin: 0; /* No margin to ensure full width */
+            padding: 0; /* No padding to ensure content fits exactly */
+            background: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/db5533d5feeea79202889849db68ca6a22b50f6b/BannerGitHub.png') no-repeat center center;
+            background-size: cover; /* Cover ensures the image fills the header */
+            overflow: hidden; /* Ensures no spillover if the image is too big */
+        }
+
+        nav {
+            text-align: center; /* Center the navigation links */
+            padding: 10px 0; /* Add some padding above and below the nav */
+            background: #333; /* Background color for the nav */
+        }
+
+        nav a {
+            color: #fff; /* Text color for nav links */
+            margin: 0 10px; /* Spacing between nav links */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the container */
+        }
+
+        .green-line {
+            height: 4px;
+            background: linear-gradient(to right, #33ff33, #33ff33); /* Green lines */
+            margin: 0; /* No margin to keep it directly below the header */
+        }
     </style>
     {% include head-custom.html %}
     {% seo %}
 </head>
 <body>
     <!-- Site Header -->
-    {% include header.html %}
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <!-- Green Line -->
+    <div class="green-line"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <section id="main_content">
             {{ content }}
