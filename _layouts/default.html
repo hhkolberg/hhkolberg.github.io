@@ -4,35 +4,37 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Link to the compiled main CSS file which should include the SCSS code -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+        /* Custom styles */
+        body {
+            margin: 0; /* Ensure there's no default margin */
+            padding: 0; /* Ensure there's no default padding */
+        }
 
-    {% include head-custom.html %}
-    {% seo %}
-</head>
-<body>
+        header {
+            width: 100%; /* Header takes the full width */
+            margin: 0; /* No margin to ensure full width */
+            padding: 0; /* No padding to ensure content fits exactly */
+            background: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/db5533d5feeea79202889849db68ca6a22b50f6b/BannerGitHub.png') no-repeat center center;
+            background-size: cover; /* Cover ensures the image fills the header */
+            overflow: hidden; /* Ensures no spillover if the image is too big */
+        }
 
-    <!-- Site Header -->
-    <header>
-        <div class="header-container">
-            <!-- The image is set in the background via CSS -->
-        </div>
-    </header>
+        nav {
+            text-align: center; /* Center the navigation links */
+            padding: 10px 0; /* Add some padding above and below the nav */
+            background: #333; /* Background color for the nav */
+        }
 
-    <!-- Navigation -->
-    <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/blog/' | relative_url }}">Blog</a>
-        <!-- Add more navigation links as needed -->
-    </nav>
+        nav a {
+            color: #fff; /* Text color for nav links */
+            margin: 0 10px; /* Spacing between nav links */
+            text-decoration: none; /* Remove underline from links */
+        }
 
-    <!-- Main Content Container -->
-    <div class="container">
-        <section id="main_content">
-            {{ content }}
-        </section>
-    </div>
-
-</body>
-</html>
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the container */
+        }
