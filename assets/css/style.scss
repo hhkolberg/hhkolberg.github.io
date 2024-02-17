@@ -37,9 +37,9 @@ h1, h2 {
 
 // Your additional container styles
 .container {
-  width: 30%;
-  margin: 100px auto;
-}
+  width: 80%; /* Adjust the width as necessary */
+  margin: 100px auto; /* Adjust the top and bottom margin as necessary */
+  max-width: 1200px; /* Or any max-width you prefer, or none */
 
 // Your additional homepage-content styles
 .homepage-content {
