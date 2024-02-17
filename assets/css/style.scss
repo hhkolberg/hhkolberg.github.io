@@ -37,6 +37,10 @@ header {
     }
 }
 
+nav {
+    margin-top: 0; /* No margin above the navigation */
+}
+
 // Global styles
 body {
     background-color: $background-color;
@@ -64,6 +68,8 @@ h1, h2 {
     text-align: center;
     position: relative;
     min-height: 300px;
+    position: relative;
+    top: 0;
 }
 
 .homepage-content::after {
