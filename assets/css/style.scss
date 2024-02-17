@@ -15,8 +15,9 @@ $heading-font-family: 'ArcadeClassic', sans-serif;
 
 // Header specific styles
 header {
-    width: 100%;
-    display: block; // Ensures the header is a block-level element
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
 
     .header-container {
         width: 100%;
@@ -28,7 +29,7 @@ header {
     img {
         max-width: 100%; // Image will scale width to the header-container
         height: auto; // Maintain aspect ratio
-        max-height: 200px; // Limit the height of the image
+        max-height: 350px; // Limit the height of the image
         display: block; // Ensures the image is a block-level element and centers it
         margin: 0 auto; // Centers the image within the header-container
     }
