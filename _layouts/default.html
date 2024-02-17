@@ -1,106 +1,38 @@
-// Import the base styles from the Hacker theme
-@import "{{ site.theme }}";
-
-// Import custom fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-@import url('https://fonts.cdnfonts.com/css/arcade-classic');
-
-// Define color scheme and font families
-$background-color: #222;
-$text-color: #FFF;
-$accent-color: #33ff33; // Neon green for the hacker effect
-$link-color: #5599ff;
-$font-family: 'Saira', sans-serif;
-$heading-font-family: 'ArcadeClassic', sans-serif;
-
-// Header specific styles
-header {
-    width: 100%;
-    margin: 0 auto;
-    background: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/db5533d5feeea79202889849db68ca6a22b50f6b/BannerGitHub.png') no-repeat center center;
-    background-size: cover; // Ensure the image covers the header area
-    height: 200px; // Fixed height for the header
-
-    .header-container {
-        width: 100%; // The container inside the header is also full width
-        margin: 0;
-        padding: 0;
-        display: flex; // Use flexbox for centering content
-        justify-content: center; // Center content horizontally
-        align-items: center; // Center content vertically
-    }
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    img {
-        max-width: 100%; // Ensure the image does not exceed the container's width
-        max-height: 100%; // The image's height should not exceed the header's height
-        display: block;
-        margin: 0 auto; // Center the image within the header
-    }
-}
+    <!-- Link to the compiled main CSS file which should include the SCSS code -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-// Navigation styles
-nav {
-    background: $background-color;
-    text-align: center;
-    padding: 0.5em 0; // Add padding to the top and bottom of the nav
-}
+    {% include head-custom.html %}
+    {% seo %}
+</head>
+<body>
 
-// Adjust the link styling within the navigation
-nav a {
-    color: $link-color;
-    margin: 0 15px; // Add margin to the left and right of each link
-    text-decoration: none; // Remove underlines from links
-    &:hover {
-        text-decoration: underline; // Add an underline on hover
-    }
-}
+    <!-- Site Header -->
+    <header>
+        <div class="header-container">
+            <!-- The image is set in the background via CSS -->
+        </div>
+    </header>
 
-// Global styles
-body {
-    background-color: $background-color;
-    color: $text-color;
-    font-family: $font-family;
-    font-weight: 700;
-    margin: 0; // Remove the default margin
-    padding: 0; // Remove the default padding
-}
+    <!-- Navigation -->
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
 
-// Heading styles
-h1, h2 {
-    font-family: $heading-font-family;
-}
+    <!-- Main Content Container -->
+    <div class="container">
+        <section id="main_content">
+            {{ content }}
+        </section>
+    </div>
 
-// Rest of your custom SCSS...
-
-// Container styles
-.container {
-    width: 80%;
-    margin: 0 auto; // Center the container
-    max-width: 1200px; // Maximum width of the container
-}
-
-// Homepage content styles
-.homepage-content {
-    text-align: center;
-    position: relative;
-    padding: 2em 0; // Add padding to the top and bottom of the content
-}
-
-// Ensure the green accent lines are positioned directly below the header
-.homepage-content::before {
-    content: "";
-    display: block;
-    height: 4px;
-    background-color: $accent-color; // Use the accent color for the lines
-    width: 100%;
-}
-
-// Keyframes animation for any elements you want to animate
-@keyframes hueShift {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
+</body>
+</html>
