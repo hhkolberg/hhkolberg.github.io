@@ -13,13 +13,25 @@ $link-color: #5599ff;
 $font-family: 'Saira', sans-serif;
 $heading-font-family: 'ArcadeClassic', sans-serif;
 
-header img {
+header {
     width: 100%;
-    height: auto;
-    max-height: 200px;
-    border: 2px solid red; // Temporary border to check if styles are applied
-}
+    display: block; // Ensures the header is a block-level element
 
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        // Other styling specific to the header container as needed
+    }
+
+    img {
+        max-width: 100%; // Image will scale width to the header-container
+        height: auto; // Maintain aspect ratio
+        max-height: 200px; // Limit the height of the image
+        display: block; // Ensures the image is a block-level element and centers it
+        margin: 0 auto; // Centers the image within the header-container
+    }
+}
 // Global styles
 body {
   background-color: $background-color;
