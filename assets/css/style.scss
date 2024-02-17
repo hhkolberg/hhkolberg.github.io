@@ -1,5 +1,5 @@
 // Import the base styles from the Hacker theme
-@import "hacker";
+@import "{{ site.theme }}";
 
 // Import custom fonts
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
