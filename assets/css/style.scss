@@ -23,30 +23,6 @@ header {
     height: 100%; // Match the height of the header
 }
 
-header::after {
-    content: '';
-    display: block;
-    height: 4px;
-    background-color: $accent-color;
-    width: 100%;
-}
-
-nav {
-    text-align: center; // This will center the navigation links
-    background: none; // Assuming no background for nav bar
-    padding: 0.5em 0; // Space above and below the navigation links
-    a {
-        color: $link-color;
-        text-decoration: none; // Remove underlines from links
-        &:not(:last-child)::after {
-            content: " / "; // Adds a "/" after each link except the last
-        }
-        &:hover {
-            text-decoration: underline; // Underline on hover
-        }
-    }
-}
-
 .container {
     margin: 20px;
     padding: 20px;
