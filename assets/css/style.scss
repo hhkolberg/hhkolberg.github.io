@@ -29,22 +29,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; // Set the height of the navigation bar
-    position: absolute;
-    bottom: 0; // Position at the bottom of the header
-    left: 0;
-    right: 0;
+    width: 100%;
     padding: 0;
+    margin: 0;
+}
 
-    a {
-        color: $link-color;
-        text-decoration: none;
-        padding: 0 10px; // Adjust spacing around the links
+nav a {
+    color: #fff; /* Adjust the color as needed */
+    text-decoration: none;
+    padding: 0 10px; /* Adjust the padding as needed */
 
-        &:not(:last-child)::after {
-            content: " / ";
-            padding-left: 10px; // Spacing after the slash
-        }
+    &:not(:last-child)::after {
+        content: "/";
+        margin: 0 10px; /* Adjust the margin as needed */
     }
 }
 
