@@ -47,6 +47,9 @@ Recognizing the limitations posed by a mere 20 dB connection strength, the next 
 
 What sets the AWUS036ACH v.2 apart is its compatibility with Kali Linux and, by extension, Nethunter. This compatibility ensures seamless integration with my current setup, offering the much-coveted monitor mode. This mode is pivotal for conducting passive surveillance of Wi-Fi traffic, capturing packets without connecting to the network—a crucial capability for assessing vulnerabilities without alerting the network's users.
 
+<img src="https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/main/IMG_3341.HEIC" width="400" height="507">
+
+
 ----------
 
 **The Importance of Precision**
