@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {% include header.html %}
     {% seo %}
-     
+    
+    <style>
+        /* Inline style to remove padding from the header */
+        .header-container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        /* If you have a specific class or ID for the header itself, add styles for it as well */
+        header {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0; /* Removes any margin at the top of the header */
+        }
+        
+        /* Style to remove padding and margin from the navigation, if it's within the header */
+        header nav {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+    {% include header.html %}
     <div class="container">
         <section id="main_content">
             {{ content }}
