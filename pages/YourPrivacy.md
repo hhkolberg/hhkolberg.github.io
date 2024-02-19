@@ -24,8 +24,7 @@ Take, for instance, the OnePlus 7T—a phone that, thanks to companies like Refu
 
 Why the **OnePlus 7T**, you might ask? Beyond its sleek design and robust performance, it harbors a chip capable of supporting 'monitor mode'. This is a hacker's dream, allowing for the monitoring and capturing of data packets invisibly floating through the air around us. It's this feature that elevates the **OnePlus 7T** from a mere communication device to a stealthy cybersecurity tool, enabling ethical hackers to test and secure networks from the palm of their hand.
 
-![100x100](https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/main/assets/IMG_3337.HEIC)
-<img src="https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/main/assets/IMG_3337.HEIC" width="200" height="100">
+<img src="https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/main/assets/IMG_3337.HEIC" width="400" height="800">
 
 With everything in place, the routine dog walk transforms into an opportunity to discreetly assess the security of nearby Wi-Fi networks. The smartphone in my pocket is no longer just a device for calls and texts; it's a powerful tool that scans the digital airwaves, evaluating the strength and vulnerabilities of the invisible networks we pass by.
 
