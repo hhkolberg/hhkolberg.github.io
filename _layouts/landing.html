@@ -42,13 +42,13 @@
             z-index: 2; /* Overlay sits on top of the image but below the text */
         }
         
-        .custom-content h1 {
+         .custom-content h1 {
             position: relative;
-            z-index: 3; /* Ensures the text is on top of the overlay */
-            font-family: 'Nintendoid1', sans-serif;
-            color: #eee;
-            font-size: 5em;
-            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+            z-index: 3;
+            font-family: 'Nintendoid1', sans-serif !important; /* Added !important */
+            color: #eee !important; /* Added !important */
+            font-size: 5em !important; /* Added !important */
+            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69 !important; /* Added !important */
             animation-duration: 0.01s;
             animation-name: textflicker;
             animation-iteration-count: infinite;
