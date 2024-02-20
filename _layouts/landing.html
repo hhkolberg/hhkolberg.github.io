@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+    <style>
+        @font-face {
+            font-family: 'Nintendoid1';
+            src: url(data:font/ttf;base64,...) format('woff2');
+        }
+        .custom-content {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Nintendoid1', sans-serif;
+            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+        }
+    </style>
+</head>
+<body>
+    {% include header.html %}
+    <div class="container">
+        <div class="custom-content">
+            <p>It's not where you take things from - It's where you take them to.</p>
+        </div>
+    </div>
+</body>
+</html>
