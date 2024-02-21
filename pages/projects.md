@@ -5,7 +5,7 @@ Please, if you have any questions about the usage, or installation, check the Gi
 ## Python Projects: 
 
 ### Pentesting:
-- `DawnStar.py` - The Buffer Overflow ToolKit
+- DawnStar.py - The Buffer Overflow ToolKit
 
 ### Learning Projects
 - BlackJack - Simple Black Jack program made while learning Python
