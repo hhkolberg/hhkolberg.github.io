@@ -12,7 +12,7 @@ tags: retro hacking wifi
 
 summary: "A dive into the realm of private household cybersecurity"
 
-The Artile: [Here](/pages/yourprivacy)
+The Artile: [Here](/pages/YourPrivacy)
 
 -------
 
