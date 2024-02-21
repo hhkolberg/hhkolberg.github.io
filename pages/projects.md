@@ -1,20 +1,20 @@
 
-*Down below you will find all my project. If the project not is finished, it will be marked with a `*`.
-Please, if you have any questions about the usage, or installation, check the GitHub pages link in the specific projects presentation page.*
+Down below you will find all my project. If the project not is finished, it will be marked with a `*`.
+Please, if you have any questions about the usage, or installation, check the GitHub pages link in the specific projects presentation page.
 
-## All Python Projects: 
+## Python Projects: 
 
-#### Pentesting:
-`DawnStar.py` - The Buffer Overflow ToolKit
+### Pentesting:
+- `DawnStar.py` - The Buffer Overflow ToolKit
 
-**Learning Projects**
+### Learning Projects
 - BlackJack - Simple Black Jack program made while learning Python
 - CoffeMachine - Program made during the learning phase of Python
 
 -----------------
 ## PowerShell Scripts
 
-#### Adversary behavioral identification:
+### Adversary behavioral identification:
 <table>
   <tr>
     <th>Script</th>
