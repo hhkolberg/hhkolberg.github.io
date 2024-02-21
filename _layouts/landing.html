@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% seo %}
     <style>
-
-        .header-class {
-            padding: 0px 0 !important; /* Example padding */
-            margin: 0 auto !important; /* Example margin */
-        }
-        
         .container {
             max-width: none;
             width: 90%;
@@ -30,9 +24,10 @@
             position: relative;
             width: 100%;
             height: 100vh;
+            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG'); /* Replace with your image */
             background-size: cover;
-            background-position: right; /* Keeps the image to the right */
-            z-index: 1;
+            background-position: right;
+            z-index: 1; /* Ensures the image layer is at the bottom */
         }
 
         .profile-background::before {
@@ -46,32 +41,19 @@
             z-index: 2; /* Overlay sits on top of the image but below the text */
         }
         
-         .custom-content h1 {
+        .custom-content h1 {
             position: relative;
-            z-index: 3;
-            font-family: 'Nintendoid1', sans-serif !important; /* Added !important */
-            color: #eee !important; /* Added !important */
-            font-size: 5em !important; /* Added !important */
-            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69 !important; /* Added !important */
+            z-index: 3; /* Ensures the text is on top of the overlay */
+            font-family: 'Nintendoid1', sans-serif;
+            color: #eee;
+            font-size: 5em;
+            text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
             animation-duration: 0.01s;
             animation-name: textflicker;
             animation-iteration-count: infinite;
             animation-direction: alternate;
             letter-spacing: 0.125em;
         }
-
-        .profile-background-image {
-            position: fixed; /* Use fixed or absolute depending on your needs */
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: auto;
-            height: 100vh;
-            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG');
-            background-size: auto 100%; /* Adjust width automatically to maintain aspect ratio, fit height to 100% */
-            background-position: right top; /* Positioned to the right, aligned to the top */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            z-index: 1; /* Ensure it's below the overlay */
 
         @keyframes textflicker {
             from {
