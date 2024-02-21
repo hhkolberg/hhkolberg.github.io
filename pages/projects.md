@@ -18,15 +18,17 @@ Please, if you have any questions about the usage, or installation, check the Gi
 
 The set of scripts presented here serve as a manual methodology for Adversary Behavioral Identification (ABI) on your system. They come into play when automated systems are compromised or as an additional security layer. They can also be used for experimental or educational purposes. Descriptions for each script are provided below for further details.
 
-- Get-NetConnectionProfile.ps1
-- Get-Process.ps1
-- Get-ScheduledTask.ps1
-- Get-StartupItem.ps1
-- Get-EventLog.ps1
-- CheckWindows.ps1
-- DetectShares.ps1
-- DetectService.ps1
-- DetectSoftware.ps1
+##### 🔎 **Explore the Scripts:**
+
+- Get-NetConnectionProfile.ps1 -Network Profile Surveillance
+- Get-Process.ps1 - Malware Process Detection
+- Get-ScheduledTask.ps1 - Task Scheduling Anomalies
+- Get-StartupItem.ps1 - Startup Integrity Verification
+- Get-EventLog.ps1 - Security Event Analysis
+- CheckWindows.ps1 - Windows Directory Monitoring
+- DetectShares.ps1 - Network Share Auditing
+- DetectService.ps1 - Service Creation Oversight
+- DetectSoftware.ps1 - Software Installation Review
 
 The scripts can be found [here.](https://github.com/hhkolberg/Powershell-Cyber-Sec-Adversary-Behavioral-Identification)
 
