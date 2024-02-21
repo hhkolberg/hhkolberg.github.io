@@ -93,6 +93,18 @@
             padding-left: 2cm; /* Adjust this value to increase the space on the left */
         }
 
+        @media (max-width: 768px) {
+        .custom-content h1 {
+            font-size: 5vw; /* Adjusts the font size for smaller screens */
+        }
+        }
+
+        @media (max-width: 480px) {
+        .custom-content h1 {
+            font-size: 6vw; /* Adjusts the font size for mobile screens */
+      }
+    }
+
         @keyframes textflicker {
             from {
                 text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
