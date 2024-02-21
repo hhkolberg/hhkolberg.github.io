@@ -12,49 +12,23 @@ Please, if you have any questions about the usage, or installation, check the Gi
 - CoffeMachine - Program made during the learning phase of Python
 
 -----------------
-## PowerShell Scripts
+# PowerShell Scripts
 
-### Adversary behavioral identification:
-<table>
-  <tr>
-    <th>Script</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Get-NetConnectionProfile.ps1</td>
-    <td>Detects changes in network connection profiles to identify potential network configuration tampering.</td>
-  </tr>
-  <tr>
-    <td>Get-Process.ps1</td>
-    <td>Identifies the presence of known malware processes by comparing running processes against a list of malicious ones.</td>
-  </tr>
-  <tr>
-    <td>Get-ScheduledTask.ps1</td>
-    <td>Checks for new or modified scheduled tasks, signaling possible unauthorized task scheduling.</td>
-  </tr>
-  <tr>
-    <td>Get-StartupItem.ps1</td>
-    <td>Monitors for new or modified startup items, indicating changes that could persist malware across reboots.</td>
-  </tr>
-  <tr>
-    <td>Get-EventLog.ps1</td>
-    <td>Retrieves and analyzes security event logs for signs of unauthorized access or system shutdowns.</td>
-  </tr>
-  <tr>
-    <td>CheckWindows.ps1</td>
-    <td>Detects new files in the Windows directory, potentially indicating unauthorized file additions.</td>
-  </tr>
-  <tr>
-    <td>DetectShares.ps1</td>
-    <td>Identifies new network shares that may have been added, indicating possible data exposure risks.</td>
-  </tr>
-  <tr>
-    <td>DetectService.ps1</td>
-    <td>Monitors for new services added to the system, which could be a sign of malware installation or system modification.</td>
-  </tr>
-  <tr>
-    <td>DetectSoftware.ps1</td>
-    <td>Checks for new software installations, potentially highlighting unauthorized or malicious software additions.</td>
-  </tr>
-</table>
+## Adversary Behavioral Identification
+
+The set of scripts presented here serve as a manual methodology for Adversary Behavioral Identification (ABI) on your system. They come into play when automated systems are compromised or as an additional security layer. They can also be used for experimental or educational purposes. Descriptions for each script are provided below for further details.
+
+- Get-NetConnectionProfile.ps1
+- Get-Process.ps1
+- Get-ScheduledTask.ps1
+- Get-StartupItem.ps1
+- Get-EventLog.ps1
+- CheckWindows.ps1
+- DetectShares.ps1
+- DetectService.ps1
+- DetectSoftware.ps1
+
+The scripts can be found here. Länk https://github.com/hhkolberg/Powershell-Cyber-Sec-Adversary-Behavioral-Identification
+
+
 
