@@ -23,12 +23,19 @@
         .profile-background {
             position: relative;
             width: 100%;
-            height: 100vh; /* This sets the container to take the full height of the viewport */
-            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG'); /* Your profile image */
-            background-size: auto 100%; /* Adjusts the width automatically to maintain aspect ratio but ensures height is 100% */
-            background-position: right top; /* Aligns the image to the right, starting from the top */
-            z-index: 1; /* Keeps the image at the bottom layer */
-       }
+            height: 100vh; /* This will cover the full height of the viewport */
+            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG');
+            background-size: cover; /* Cover the container without repeating */
+            background-position: right center; /* Align to the right, centered vertically */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            z-index: 1;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+        }
 
         .profile-background::before {
             content: '';
@@ -37,8 +44,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-            z-index: 2; /* Overlay sits on top of the image but below the text */
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
         }
         
         .custom-content h1 {
