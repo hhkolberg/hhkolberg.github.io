@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% seo %}
     <style>
-        .header, .header-container {
-            margin: 0 auto; /* Adjusts margin to center the header and remove any default margins */
-            padding: 0; /* Removes default padding */
-         }
+        /* Inline style to remove padding from the header */
+        .header-container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        /* If you have a specific class or ID for the header itself, add styles for it as well */
+        header {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0; /* Removes any margin at the top of the header */
+        }
             
         .container {
             max-width: none;
