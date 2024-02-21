@@ -21,18 +21,14 @@
         }
 
         .profile-background {
-            position: fixed; /* Use fixed to keep the image in place while scrolling */
-            right: 0; /* Align to the right of the viewport */
-            top: 0; /* Align to the top of the viewport */
-            bottom: 0; /* Stretch to the bottom of the viewport */
-            width: auto; /* Allow the width to automatically adjust */
-            height: 100vh; /* 100% of the viewport height */
-            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG');
-            background-size: auto 100%; /* Resize the background image to cover the height fully */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-position: right top; /* Align the image to the right top */
-            z-index: 1; /* Ensure it's below the content for text readability */
-        }
+            position: relative;
+            width: 100%;
+            height: 100vh; /* This sets the container to take the full height of the viewport */
+            background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG'); /* Your profile image */
+            background-size: auto 100%; /* Adjusts the width automatically to maintain aspect ratio but ensures height is 100% */
+            background-position: right top; /* Aligns the image to the right, starting from the top */
+            z-index: 1; /* Keeps the image at the bottom layer */
+       }
 
         .profile-background::before {
             content: '';
