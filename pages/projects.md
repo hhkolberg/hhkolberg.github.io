@@ -28,7 +28,7 @@ The set of scripts presented here serve as a manual methodology for Adversary Be
 - DetectService.ps1
 - DetectSoftware.ps1
 
-The scripts can be found here. Länk https://github.com/hhkolberg/Powershell-Cyber-Sec-Adversary-Behavioral-Identification
+The scripts can be found [here.](https://github.com/hhkolberg/Powershell-Cyber-Sec-Adversary-Behavioral-Identification)
 
 
 
