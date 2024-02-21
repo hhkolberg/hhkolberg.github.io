@@ -61,10 +61,17 @@
         }
 
         .profile-background-image {
+            position: fixed; /* Use fixed or absolute depending on your needs */
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: auto;
+            height: 100vh;
             background-image: url('https://raw.githubusercontent.com/hhkolberg/hhkolberg.github.io/a64724359e745a35a5eb932738b0ef63fbf8a2d1/assets/img.PNG');
-            background-size: 541px 1237px; /* Set the size of your image */
-            background-repeat: no-repeat;
-            background-position: right;
+            background-size: auto 100%; /* Adjust width automatically to maintain aspect ratio, fit height to 100% */
+            background-position: right top; /* Positioned to the right, aligned to the top */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            z-index: 1; /* Ensure it's below the overlay */
 
         @keyframes textflicker {
             from {
