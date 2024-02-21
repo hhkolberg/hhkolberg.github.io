@@ -69,12 +69,15 @@
             z-index: 2;
         }
         
-        .custom-content h1 {
+        .custom-content {
             display: flex;
-            justify-content: center; /* This will center the content horizontally */
-            align-items: center; /* This will center the content vertically */
-            height: 100%; /* This will take the full height of its parent */
-            text-align: left;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Take the full viewport height */
+            text-align: center;
+        }
+
+        .custom-content h1 {
             position: relative;
             z-index: 3; /* Ensures the text is on top of the overlay */
             font-family: 'Nintendoid1', sans-serif;
@@ -86,6 +89,7 @@
             animation-iteration-count: infinite;
             animation-direction: alternate;
             letter-spacing: 0.125em;
+            /* Removed display, justify-content, align-items, height, and text-align from here */
         }
 
         @keyframes textflicker {
