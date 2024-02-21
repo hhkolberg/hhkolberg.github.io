@@ -19,7 +19,7 @@ As of today, there are five different templates that formes all of my knowledge 
 
 The Attack Path template is meticulously constructed to outline the sequence and methodology of cyberattacks. It serves as a step-by-step guide that details the vectors, tools, and strategies employed by attackers. By dissecting the anatomy of an attack, this template empowers users with the foresight to anticipate vulnerabilities and reinforce their defenses effectively.
 
-[Template](https://github.com/hhkolberg/hhkolberg.github.io/blob/f29e60f961b0e79c2962d386a793672c70ded7cc/pages/AttackPath.md)
+[Template](/pages/AttackPath.md)
 
 ### Knowledge Article Template
 
