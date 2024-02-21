@@ -82,7 +82,7 @@
             z-index: 3; /* Ensures the text is on top of the overlay */
             font-family: 'Nintendoid1', sans-serif;
             color: #eee;
-            font-size: 5em;
+            font-size: 4em;
             text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
             animation-duration: 0.01s;
             animation-name: textflicker;
@@ -93,17 +93,23 @@
             padding-right: 2cm; /* Adjust this value to increase the space on the left */
         }
 
+        @media (min-width: 769px) {
+            .custom-content h1 {
+                font-size: 2vw; /* Adjust this value as needed for desktop screens */
+            }
+        }
+        
         @media (max-width: 768px) {
-        .custom-content h1 {
-            font-size: 5vw; /* Adjusts the font size for smaller screens */
+            .custom-content h1 {
+                font-size: 5vw; /* Adjusts the font size for smaller screens */
+            }
         }
-        }
-
+        
         @media (max-width: 480px) {
-        .custom-content h1 {
-            font-size: 6vw; /* Adjusts the font size for mobile screens */
-      }
-    }
+            .custom-content h1 {
+                font-size: 6vw; /* Adjusts the font size for mobile screens */
+            }
+        }
 
         @keyframes textflicker {
             from {
