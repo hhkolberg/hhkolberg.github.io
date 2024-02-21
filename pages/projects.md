@@ -22,11 +22,11 @@ Read more about DawnStar [here.](/pages/dawnbreaker)
 
 *Currently under developement*
 
-Find the curret status [here.]([url](https://github.com/hhkolberg/ShadowKey/tree/main))
+Find the curret status [here.](https://github.com/hhkolberg/ShadowKey/tree/main)
 
 ## Learning Projects
-- BlackJack - Simple Black Jack program made while learning Python - [Link]([url](https://github.com/hhkolberg/Python_Projects/blob/main/Black_Jack.py))
-- CoffeMachine - Program made during the learning phase of Python - [Link]([url](https://github.com/hhkolberg/Python_Projects/blob/main/CoffeMachine.py))
+- BlackJack - Simple Black Jack program made while learning Python - [Link](https://github.com/hhkolberg/Python_Projects/blob/main/Black_Jack.py)
+- CoffeMachine - Program made during the learning phase of Python - [Link](https://github.com/hhkolberg/Python_Projects/blob/main/CoffeMachine.py)
 
 -----------------
 # PowerShell Scripts
