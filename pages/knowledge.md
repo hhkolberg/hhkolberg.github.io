@@ -25,13 +25,13 @@ The Attack Path template is meticulously constructed to outline the sequence and
 
 The Knowledge Article template is the backbone of my documentation system, designed to encapsulate comprehensive information on specific cybersecurity topics. It's structured to deliver in-depth insights while maintaining ease of understanding, ensuring that even the most complex concepts are communicated with clarity.
 
-Template.
+[Template.](/pages/KnwnArticle)
 
 ### Hybrid Template
 
 The Hybrid template is an innovative fusion of the Knowledge Article format with practical elements. It offers an enriched learning experience by combining theoretical insights with hands-on examples or case studies. This template stands out as a versatile resource, bridging the gap between abstract knowledge and tangible application.
 
-Template.
+[Template.](/pages/hybrid)
 
 My involvement with a leading international company in structuring their Smart Home troubleshooting guides has been a fantastic confirmation. It has demonstrated the value and effectiveness of my knowledge management techniques on a global scale. The template I created is now a benchmark for clarity, quick comprehension, and detailed problem-solving approaches.
 
