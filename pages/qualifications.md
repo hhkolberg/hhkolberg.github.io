@@ -75,10 +75,35 @@ TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
 ### Action Points:
 - Complete the Web Security Learning Path on PortSwigger, covering extensive web vulnerabilities and exploitation techniques.
 - Practice with free labs provided for hands-on experience.
-- Burp Suite Proficiency
 
+## Burp Suite Proficiency
 **Tool Overview:** Burp Suite is an indispensable tool for web traffic interception and manipulation, a must-know for penetration testers.
+**Learning Modules on TryHackMe:**
+- Begin with Burp Suite Basics for an introductory understanding.
+- Master advanced functionalities through Burp Suite Intruder, Extender, Repeater, and Burp Suite OM.
 
-## Learning Modules on TryHackMe:
-Begin with Burp Suite Basics for an introductory understanding.
-Master advanced functionalities through Burp Suite Intruder, Extender, Repeater, and Burp Suite OM.
+## TCM-PEH Course: A Comprehensive Approach
+**Overview:** The TCM Academy's Practical Ethical Hacking course is a cornerstone for any aspiring penetration tester. Covering all necessary aspects of penetration testing, it ensures you're well-prepared for real-world challenges. - A MUST HAVE! 
+
+### Features:
+- Comprehensive coverage of penetration testing concepts.
+- Hands-on experience with creating vulnerable labs.
+- In-depth Active Directory practicals, essential for mastering corporate network penetration.
+- Enrollment: Dive into the course here.
+
+## Practical Experience with TryHackMe
+- Introduction: Beyond theoretical learning, engaging with practical scenarios is crucial. TryHackMe offers a plethora of interactive rooms catering to diverse penetration testing skills.
+
+**Highlighted Rooms:**
+- Explore various vulnerabilities and attack strategies through rooms like:
+- Living off the Land
+- Solar for Log4j exploitation
+- Carnage
+And many more focused on specific techniques like DNS in Detail or NMAP.
+Approach: Start with easier rooms and gradually challenge yourself with medium-difficulty scenarios to build a robust skill set.
+Real-World Application with HackTheBox
+Getting Started: HackTheBox provides an immersive experience with its range of machines designed to mimic real-world vulnerabilities.
+Methodology:
+Begin with easier machines to familiarize yourself with the platform.
+Utilize walkthroughs wisely. Aim to learn new techniques or understand your mistakes, rather than relying on them from the start.
+Goal: Complete over 50 machines to solidify your understanding and readiness for professional penetration testing tasks.
