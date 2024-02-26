@@ -7,6 +7,7 @@
 - HTTP & HTTPS: Learn the fundamentals of web communication and the importance of secure connections.
 - DNS & DHCP: Get to grips with how domain names are resolved and how devices obtain IP addresses on a network.
 - ARP: Discover how IP addresses are linked to physical MAC addresses on a local area network.
+- OSI-model, even tho you will not need troubleshooting that much, network engineers will ask about the layers and throuw around the termonology of the OSI-model. Make sure to learn it. 
 
 ### Recommended Resources:
 - TCP/IP by Behrouz A. Forouzan: A comprehensive book for building a solid foundation in networking concepts. Available here.
