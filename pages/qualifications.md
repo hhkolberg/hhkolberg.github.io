@@ -63,11 +63,12 @@
 
 **Learning Resources:**
 TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
-[AD Basics:](https://tryhackme.com/room/winadbasics) Foundation course for beginners.
-Attacking Kerberos: Learn common AD attacks.
-Attacktive Directory: Advanced AD attack strategies.
-Windows Internals: Dive deeper into Windows internals and AD intricacies.
-Web Application Penetration Testing with PortSwigger
+  [AD Basics:](https://tryhackme.com/room/winadbasics) Foundation course for beginners.
+  Attacking Kerberos: Learn common AD attacks.
+  Attacktive Directory: Advanced AD attack strategies.
+  Windows Internals: Dive deeper into Windows internals and AD intricacies.
+
+## Web Application Penetration Testing with PortSwigger
 Overview: PortSwigger's Web Security Academy offers top-notch theoretical and practical training in web app security.
 Action Points:
 Complete the Web Security Learning Path on PortSwigger, covering extensive web vulnerabilities and exploitation techniques.
