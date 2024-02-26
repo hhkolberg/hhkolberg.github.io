@@ -46,10 +46,34 @@
 - TryHackMe Rooms: Complete the Windows fundamentals series to grasp registry hives, directory structures, and command-line tools including CMD and PowerShell. The rooms to cover are Windows Fundamentals 1, 2, and 3, along with a PowerShell room for scripting.
 
 ## Programming for Penetration Testing
-***Automation and Scripting:
+**Automation and Scripting:**
 - TCM Academy: For a solid start in programming, consider the Python101 and Rust101 courses available at TCM Academy to learn Python and Rust, crucial for automation and security scriptwriting.
 
 ## Web Development Basics
 **Understanding Web Applications:**
 - Free Resources: Utilize freeCodeCamp for an extensive learning path on HTML, CSS, JavaScript (JS), and SQL which are foundational for web app penetration testing.
 - PortSwigger Web Security Academy: Dive into PortSwigger's learning path for practical web application security testing insights.
+
+----
+
+# Intermediate Skill Enhancement Guide
+
+## Active Directory Mastery
+**Importance:** Mastering Active Directory (AD) is crucial for both certification exams and real-world application in corporate IT environments.
+
+**Learning Resources:**
+TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
+[AD Basics:](https://tryhackme.com/room/winadbasics) Foundation course for beginners.
+Attacking Kerberos: Learn common AD attacks.
+Attacktive Directory: Advanced AD attack strategies.
+Windows Internals: Dive deeper into Windows internals and AD intricacies.
+Web Application Penetration Testing with PortSwigger
+Overview: PortSwigger's Web Security Academy offers top-notch theoretical and practical training in web app security.
+Action Points:
+Complete the Web Security Learning Path on PortSwigger, covering extensive web vulnerabilities and exploitation techniques.
+Practice with free labs provided for hands-on experience.
+Burp Suite Proficiency
+Tool Overview: Burp Suite is an indispensable tool for web traffic interception and manipulation, a must-know for penetration testers.
+Learning Modules on TryHackMe:
+Begin with Burp Suite Basics for an introductory understanding.
+Master advanced functionalities through Burp Suite Intruder, Extender, Repeater, and Burp Suite OM.
