@@ -114,14 +114,54 @@ TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
 
 **Approach:** Start with easier rooms and gradually challenge yourself with medium-difficulty scenarios to build a robust skill set.
 
-- Real-World Application with HackTheBox
-
-**Getting Started:** HackTheBox provides an immersive experience with its range of machines designed to mimic real-world vulnerabilities.
+## Real-World Application with HackTheBox
+*Getting Started:* HackTheBox provides an immersive experience with its range of machines designed to mimic real-world vulnerabilities.
 
 **Methodology:**
 - Begin with easier machines to familiarize yourself with the platform.
 - Utilize walkthroughs wisely. Aim to learn new techniques or understand your mistakes, rather than relying on them from the start.
 
-**Goal:** Complete over 50 machines to solidify your understanding and readiness for professional penetration testing tasks.
+**Goal:** Complete **over 50 machines** to solidify your understanding and readiness for professional penetration testing tasks.
 
+# Advanced Preparation for OSCP Exam
+
+- Enroll in the OSCP Exam
+
+**Complete Topic Exercises:** Before diving into the exam, make sure to finish all the exercises provided in the OSCP material. Completing these exercises can earn you an additional 10 points, which can be crucial if you're on the cusp of passing the exam.
+
+**Tackle Advanced Topics with Caution**
+
+## AV Evasion and Exploit Development: 
+While these topics are essential, *they are less frequently tested in the OSCP Pen-200 exam* and are **more** relevant for the Pen-300 exam. Focus on these areas but remember the core exam objectives.
+- Challenge Yourself with Hard Rooms on TryHackMe
+
+**Push Your Limits:** Engaging with harder rooms on TryHackMe not only tests your skills but also prepares you for the unexpected challenges of the OSCP exam.
+Use Walkthroughs Wisely: Refer to walkthroughs when necessary, but aim to learn something new each time. This approach ensures that your skills continuously improve, adding new techniques to your arsenal.
+
+## Key Strategies for Success
+**Focus on Learning:** 
+The goal is to expand your knowledge and skill set, not just to complete tasks. Each challenge should contribute to your understanding and capabilities.
+
+**Prepare for the Practical:** OSCP is heavily practical. Ensure that your study and practice focus on hands-on skills that directly apply to real-world scenarios you'll encounter during the exam.
+Remember, the journey to OSCP certification is as much about the knowledge and skills you acquire as it is about passing the exam. Keep challenging yourself, stay curious, and don't shy away from difficult tasks. Your growth through these stages will make you not just ready for the OSCP but a more competent cybersecurity professional overall.
+
+## Utilize TJ-Null's List of OSCP-Like Machines
+TJ-Null's curated list compiles machines from platforms such as **Hack The Box (HTB)**, **VulnHub**, and **Proving Grounds**, offering a range of scenarios similar to those in the OSCP exam.
+
+**Action Step:** 
+Access TJ-Null's List and methodically work through the machines, starting from those aligned with your current skill level and gradually tackling more complex challenges.
+Engage with Proving Grounds
+
+**Why It's Beneficial:** The machines on Proving Grounds closely mimic the environment and challenges of the OSCP exam, making them excellent for practice.
+
+**Goal:** 
+Aim to complete at least 50 machines on Proving Grounds, balancing both Play and Practice modes to cover a wide range of vulnerabilities and attack vectors.
+Learn from Ippsec's Video Walkthroughs
+Resource Description: Ippsec is renowned for detailed walkthroughs of HTB machines, providing insights into solving complex problems and learning new techniques.
+
+**How to:**
+- YouTube: Visit Ippsec's YouTube channel for video guides.
+- Website: Use Ippsec's website as a searchable database to find commands and techniques relevant to specific attack types you're interested in.
+- Emphasize Consistent Practice
+- Key to Success: The cornerstone of OSCP preparation is relentless practice. Engage regularly with new machines, revisit concepts that challenge you, and apply new techniques as you learn them.
 
