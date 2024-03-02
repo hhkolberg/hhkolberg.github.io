@@ -97,18 +97,18 @@ TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
 
 **Highlighted Rooms:**
 
-[Livingofftheland](https://tryhackme.com/room/livingofftheland)
-[Log4j](https://tryhackme.com/room/solar) 
-[Carnage](https://tryhackme.com/room/c2carnage) 
-[JTR]([https://tryhackme.com/room/johntheripper0)
-[DNS](https://tryhackme.com/room/dnsindetail) 
-[Zerologon](https://tryhackme.com/room/zer0logon)
-[NMAP](https://tryhackme.com/room/furthernmap) 
-[Overpass](https://tryhackme.com/room/overpass2hacked) 
-[Relevant](https://tryhackme.com/room/relevant) 
-[Kenobi](https://tryhackme.com/room/kenobi) 
-[Hackpark](https://tryhackme.com/room/hackpark)
-[Picklerick](https://tryhackme.com/room/picklerick)
+- [Livingofftheland](https://tryhackme.com/room/livingofftheland)
+- [Log4j](https://tryhackme.com/room/solar) 
+- [Carnage](https://tryhackme.com/room/c2carnage) 
+- [JTR](https://tryhackme.com/room/johntheripper0)
+- [DNS](https://tryhackme.com/room/dnsindetail) 
+- [Zerologon](https://tryhackme.com/room/zer0logon)
+- [NMAP](https://tryhackme.com/room/furthernmap) 
+- [Overpass](https://tryhackme.com/room/overpass2hacked) 
+- [Relevant](https://tryhackme.com/room/relevant) 
+- [Kenobi](https://tryhackme.com/room/kenobi) 
+- [Hackpark](https://tryhackme.com/room/hackpark)
+- [Picklerick](https://tryhackme.com/room/picklerick)
  
 .. etc and there are many more. You can go through them yourselves, go from beginner to medium to advanced.
 
