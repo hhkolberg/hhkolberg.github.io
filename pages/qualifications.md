@@ -79,8 +79,9 @@ TryHackMe Paths: Comprehensive courses on AD basics and attack strategies.
 ## Burp Suite Proficiency
 **Tool Overview:** Burp Suite is an indispensable tool for web traffic interception and manipulation, a must-know for penetration testers.
 **Learning Modules on TryHackMe:**
-- Begin with Burp Suite Basics for an introductory understanding.
-- Master advanced functionalities through Burp Suite Intruder, Extender, Repeater, and Burp Suite OM.
+- Begin with [Burp Suite Basics](https://tryhackme.com/room/burpsuitebasics) for an introductory understanding.
+- Master advanced functionalities through Burp Suite [Intruder](https://tryhackme.com/room/burpsuiteintruder), [Extender](https://tryhackme.com/room/burpsuiteextender), [Repeater](https://tryhackme.com/room/burpsuiterepeater), and [Burp Suite OM](https://tryhackme.com/room/burpsuiteom).
+
 
 ## TCM-PEH Course: A Comprehensive Approach
 **Overview:** The TCM Academy's Practical Ethical Hacking course is a cornerstone for any aspiring penetration tester. Covering all necessary aspects of penetration testing, it ensures you're well-prepared for real-world challenges. - A MUST HAVE! 
