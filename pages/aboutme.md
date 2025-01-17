@@ -11,9 +11,12 @@
 **Cyber Engineer**
 *Detect & Respond*
 
+**Vulnerability Analyst**
+*Vulnerability Operations Center*
+
 **Vulnerability Management**
 
- - Vulnerability Management Lifecycle
+ - Vulnerability Management
  - Documentation
  - Processes
 
@@ -42,15 +45,6 @@
 - RESTful APIs
 - JSON
 
-## Tools
-- BurpSuite
-- Nmap
-- Metasploit
-- Gobuster
-- SQLmap
-- InsightVM
-- and so on..
-
 ## Processes
 - Process Developement
 - Six Sigma
@@ -78,6 +72,12 @@
 # MyPath
 
 - TryHackMe Public Profile: https://tryhackme.com/p/KaliNetz
-- C EH
-- OSCP (Ongoing)
+- CompTIA PenTest+ (Ongoing)
 
+- Next Step: OSCP
+
+# Qualifications
+
+- C EH
+- Security+
+- Qualys Certified
