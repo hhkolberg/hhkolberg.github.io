@@ -50,6 +50,9 @@ After flashing, mount the `boot` partition and create:
   EOF
   ```
 
+### 2.3 Enable SSH with Ethernet Instead of Wi-Fi
+During the installation process, use advanced settings to enable SSH access. Ensure you set up the correct username and password. Insert the SD card and start the Raspberry Pi.
+
 ---
 
 ## 3. Enabling SSH and Setting Up SSH Keys
