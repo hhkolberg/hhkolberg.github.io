@@ -49,5 +49,13 @@ The set of scripts presented here serve as a manual methodology for Adversary Be
 
 The scripts can be found [here.](https://github.com/hhkolberg/Powershell-Cyber-Sec-Adversary-Behavioral-Identification)
 
+-------------------
+
+# IntruderShooter
+
+## Defense / IDS / IPS 
+
+Click [here](/pages/IntruderShooter) to learn more about this Raspberry Pi project
+
 
 
