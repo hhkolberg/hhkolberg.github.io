@@ -51,9 +51,9 @@ The scripts can be found [here.](https://github.com/hhkolberg/Powershell-Cyber-S
 
 -------------------
 
-# IntruderShooter
+# Raspberry Pi
 
-## Defense / IDS / IPS 
+## IntruderShooter / IDS / IPS 
 
 Click [here](/pages/IntruderShooter) to learn more about this Raspberry Pi project
 
