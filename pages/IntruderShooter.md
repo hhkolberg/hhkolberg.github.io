@@ -206,6 +206,77 @@ Now, your system will automatically install security updates, reducing the risk 
 
 ---
 
+## 7. Configuring Email Notifications for Security Alerts
+
+Setting up email notifications ensures you receive alerts for security-related events.
+
+1. Install **mailutils**:
+   ```sh
+   sudo apt install mailutils -y
+   ```
+2. Configure email settings in **ssmtp**:
+   ```sh
+   sudo nano /etc/ssmtp/ssmtp.conf
+   ```
+   Example settings:
+   ```ini
+   root=your_email@example.com
+   mailhub=smtp.gmail.com:587
+   AuthUser=your_email@example.com
+   AuthPass=your_email_password
+   UseTLS=YES
+   ```
+3. Test email sending:
+   ```sh
+   echo "Security Test Email" | mail -s "Raspberry Pi Alert" your_email@example.com
+   ```
+
+---
+
+## 8. Testing Nmap for Vulnerability Assessment
+
+Regular network scanning helps identify vulnerabilities.
+```sh
+nmap -A -T4 <RaspberryPi-IP>
+```
+
+---
+
+## 9. Restricting SSH Access to a Single Machine
+
+To limit SSH access to one trusted device:
+```sh
+sudo nano /etc/hosts.allow
+```
+Add:
+```ini
+sshd: 192.168.1.100
+```
+```sh
+sudo nano /etc/hosts.deny
+```
+Add:
+```ini
+sshd: ALL
+```
+
+---
+
+## 10. Final Security Checks and Testing
+
+1. Check firewall status:
+   ```sh
+   sudo ufw status verbose
+   ```
+2. Verify **Fail2Ban** and **PSAD**:
+   ```sh
+   sudo fail2ban-client status sshd
+   sudo psad --Status
+   ```
+3. Test SSH login from an unauthorized device to ensure restrictions work.
+
+---
+
 The remaining sections cover setting up **Fail2Ban, PSAD, email notifications, security testing**, and **finalizing your Raspberry Pi's security setup**.
 
 
