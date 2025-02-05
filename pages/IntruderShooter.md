@@ -9,10 +9,11 @@
 5. Setting Up Google Authenticator for SSH 2FA
 6. Setting Up Fail2Ban to Prevent Brute-Force Attacks
 7. Setting Up PSAD to Detect Port Scans
-8. Configuring Email Notifications for Security Alerts
-9. Testing Nmap for Vulnerability Assessment
-10. Restricting SSH Access to a Single Machine
-11. Final Security Checks and Testing
+8. Configuring Unattended Security Updates
+9. Configuring Email Notifications for Security Alerts
+10. Testing Nmap for Vulnerability Assessment
+11. Restricting SSH Access to a Single Machine
+12. Final Security Checks and Testing
 
 ---
 
@@ -233,7 +234,104 @@ Setting up email notifications ensures you receive alerts for security-related e
 
 ---
 
-## 8. Testing Nmap for Vulnerability Assessment
+## 8. Setting Up PSAD to Detect Port Scans
+
+PSAD (Port Scan Attack Detector) is an intrusion detection system that monitors firewall logs to detect potential scanning activity.
+
+### 8.1 Install PSAD
+
+1. Install the required package:
+   ```sh
+   sudo apt update && sudo apt install psad -y
+   ```
+
+2. Enable UFW logging:
+   ```sh
+   sudo ufw logging on
+   ```
+
+3. Configure UFW to log packets:
+   ```sh
+   sudo nano /etc/ufw/before.rules
+   ```
+   Add the following lines at the beginning of the file:
+   ```ini
+   -A INPUT -j LOG
+   -A FORWARD -j LOG
+   ```
+   Save and exit the file, then restart UFW:
+   ```sh
+   sudo systemctl restart ufw
+   ```
+
+### 8.2 Configure PSAD
+
+1. Edit the PSAD configuration file:
+   ```sh
+   sudo nano /etc/psad/psad.conf
+   ```
+   Modify the following lines:
+   ```ini
+   EMAIL_ADDRESSES your_email@example.com;
+   HOSTNAME your_pi_hostname;
+   ENABLE_AUTO_IDS Y;
+   AUTO_IDS_DANGER_LEVEL 3;
+   EMAIL_ALERT_DANGER_LEVEL 1;
+   HOST_SCAN_THRESHOLD 5;
+   PSADWATCHDOG 3600;
+   ```
+   ✅ `AUTO_IDS_DANGER_LEVEL 3;` → Aggressive auto-blocking.
+   ✅ `EMAIL_ALERT_DANGER_LEVEL 1;` → Ensures alerts for all scans.
+   ✅ `HOST_SCAN_THRESHOLD 5;` → Reduces the threshold for detecting scans.
+   ✅ `PSADWATCHDOG 3600;` → Ensures PSAD runs continuously.
+   
+   Save the file and restart PSAD:
+   ```sh
+   sudo systemctl restart psad
+   ```
+
+### 8.3 Update PSAD Signatures
+
+Ensure PSAD has the latest attack signatures:
+```sh
+sudo psad --sig-update
+sudo psad -R
+sudo systemctl restart psad
+```
+
+### 8.4 Ensure iptables is Hooked
+
+Check if the PSAD chain has active rules:
+```sh
+sudo iptables -L PSAD -n
+```
+If empty, manually add a blocking rule:
+```sh
+sudo iptables -I INPUT -m psad --psad-detect -j DROP
+```
+Then restart PSAD again:
+```sh
+sudo systemctl restart psad
+```
+
+### 8.5 Verify PSAD Status
+
+Check if PSAD is running and monitoring logs properly:
+```sh
+sudo psad --Status
+```
+
+PSAD will now monitor for port scanning activity, enforce automatic blocking, and send alerts if any suspicious behavior is detected.
+
+---
+
+Your Raspberry Pi is now hardened with security best practices, automated updates, intrusion detection, and multi-factor authentication. 🚀
+
+
+
+
+
+## 9. Testing Nmap for Vulnerability Assessment
 
 Regular network scanning helps identify vulnerabilities.
 ```sh
@@ -242,7 +340,7 @@ nmap -A -T4 <RaspberryPi-IP>
 
 ---
 
-## 9. Restricting SSH Access to a Single Machine
+## 10. Restricting SSH Access to a Single Machine
 
 To limit SSH access to one trusted device:
 ```sh
@@ -262,7 +360,7 @@ sshd: ALL
 
 ---
 
-## 10. Final Security Checks and Testing
+## 11. Final Security Checks and Testing
 
 1. Check firewall status:
    ```sh
@@ -276,8 +374,6 @@ sshd: ALL
 3. Test SSH login from an unauthorized device to ensure restrictions work.
 
 ---
-
-The remaining sections cover setting up **Fail2Ban, PSAD, email notifications, security testing**, and **finalizing your Raspberry Pi's security setup**.
 
 
 
