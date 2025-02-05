@@ -55,6 +55,7 @@ During the installation process, use advanced settings to enable SSH access. Ens
 
 ---
 
+
 ## 3. Enabling SSH and Setting Up SSH Keys
 
 To find the Raspberry Pi's IP address, log in to your router or use nmap:
@@ -62,25 +63,34 @@ To find the Raspberry Pi's IP address, log in to your router or use nmap:
 nmap -sn 192.168.1.0/24 | grep "Raspberry"
 ```
 
-### 3.1 Connect via SSH
+### 3.1 Generating SSH Keys on Windows
+
+To create a secure SSH key pair on Windows:
+1. Open **PowerShell** and run:
+   ```sh
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+2. Save the key pair in the default location (`C:\Users\YourUser\.ssh\id_rsa`).
+3. Upload the **public key** (`id_rsa.pub`) to the Raspberry Pi:
+   ```sh
+   scp C:\Users\YourUser\.ssh\id_rsa.pub pi@<RaspberryPi-IP>:~/.ssh/authorized_keys
+   ```
+
+**Pro Tip:** Store your private SSH key in a secure **password manager** like Bitwarden or 1Password. Although it might be inconvenient, it significantly enhances security and aligns with the **CIA Triad** principles.
+
+### 3.2 Connect via SSH
 ```sh
 ssh pi@<RaspberryPi-IP>
 ```
 Default password: `raspberry`
 
-### 3.2 Disable Password Authentication and Enable Key-Based Login
-```sh
-mkdir -p ~/.ssh && chmod 700 ~/.ssh
-nano ~/.ssh/authorized_keys
-```
-Paste your **public SSH key** and save.
-
+### 3.3 Disable Password Authentication and Enforce SSH Key Usage
 ```sh
 sudo nano /etc/ssh/sshd_config
 ```
 Modify:
 ```ini
-PasswordAuthentication yes
+PasswordAuthentication no
 ChallengeResponseAuthentication yes
 AuthenticationMethods publickey,keyboard-interactive
 ```
@@ -90,6 +100,7 @@ sudo systemctl restart ssh
 ```
 
 ---
+
 
 ## 4. Configuring the Firewall with UFW
 
@@ -162,7 +173,44 @@ Ensure you have your authentication app ready before logging out, as failing to 
 
 ---
 
-## 6-11. Remaining Steps
+## 6. Configuring Unattended Security Updates
+
+To ensure the Raspberry Pi stays up to date with critical security patches, configure automatic security updates.
+
+1. Install the **unattended-upgrades** package:
+   ```sh
+   sudo apt install unattended-upgrades -y
+   ```
+2. Enable automatic updates:
+   ```sh
+   sudo dpkg-reconfigure --priority=low unattended-upgrades
+   ```
+3. Configure the update settings:
+   ```sh
+   sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+   ```
+   Ensure the following lines are present:
+   ```ini
+   Unattended-Upgrade::Allowed-Origins {
+       "${distro_id}:${distro_codename}-security";
+   };
+   Unattended-Upgrade::Automatic-Reboot "true";
+   ```
+4. Apply changes:
+   ```sh
+   sudo systemctl enable unattended-upgrades
+   sudo systemctl restart unattended-upgrades
+   ```
+
+Now, your system will automatically install security updates, reducing the risk of vulnerabilities.
+
+---
 
 The remaining sections cover setting up **Fail2Ban, PSAD, email notifications, security testing**, and **finalizing your Raspberry Pi's security setup**.
+
+
+
+
+
+
 
