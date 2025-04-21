@@ -32,5 +32,5 @@ if __name__ == "__main__":
     cves = fetch_entries(CVE_FEED)
     news = fetch_entries(NEWS_FEED)
 
-    update_markdown("/pages/CTID.md", "<!-- CVE_LIST_START -->", "<!-- CVE_LIST_END -->", "\n".join(cves))
-    update_markdown("/pages/CTID.md", "<!-- NEWS_LIST_START -->", "<!-- NEWS_LIST_END -->", "\n".join(news))
+    update_markdown("pages/CTID.md", "<!-- CVE_LIST_START -->", "<!-- CVE_LIST_END -->", "\n".join(cves))
+    update_markdown("pages/CTID.md", "<!-- NEWS_LIST_START -->", "<!-- NEWS_LIST_END -->", "\n".join(news))
