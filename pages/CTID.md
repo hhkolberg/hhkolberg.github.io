@@ -10,13 +10,13 @@ Welcome to your personal threat intelligence dashboard. Below are the latest cri
 ## 🔥 Top CVEs This Week
 
 <!-- CVE_LIST_START -->
-*Fetching latest CVEs...*
+Fetching latest CVEs...
 <!-- CVE_LIST_END -->
 
 ## 📰 Latest Cybersecurity News
 
 <!-- NEWS_LIST_START -->
-*Fetching latest news...*
+Fetching latest news...
 <!-- NEWS_LIST_END -->
 
 ## 📅 Monthly Overview
