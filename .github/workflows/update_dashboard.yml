@@ -1,0 +1,32 @@
+name: Update Threat Intelligence Dashboard
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Runs daily at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install feedparser requests
+
+      - name: Run Update Script
+        run: python scripts/update_dashboard.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add index.md
+          git commit -m "Update dashboard with latest CVEs and news"
+          git push
