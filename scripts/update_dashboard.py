@@ -1,15 +1,17 @@
 import feedparser
 import re
 
-# RSS feeds URLs
-CVE_FEED = "https://cve.mitre.org/data/downloads/allitems.xml"
+# Corrected RSS feeds URLs
+CVE_FEED = "https://cve.trendmicro.com/rss"
 NEWS_FEED = "https://www.cisa.gov/uscert/ncas/alerts.xml"
 
 def fetch_entries(feed_url, max_entries=5):
     feed = feedparser.parse(feed_url)
     entries = []
     for entry in feed.entries[:max_entries]:
-        entries.append(f"- [{entry.title}]({entry.link})")
+        title = getattr(entry, 'title', 'No Title')
+        link = getattr(entry, 'link', '#')
+        entries.append(f"- [{title}]({link})")
     return entries
 
 def update_markdown(file_path, start_tag, end_tag, new_content):
