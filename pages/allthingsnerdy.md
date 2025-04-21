@@ -9,3 +9,9 @@ Beyond Locks and Cameras: Securing the Digital Gateway to Your Home.
 My Beginner's Guide to Penetration Testing
 - The Article: [Here](/pages/pentesting)
 
+-------
+
+Cyber Threat Intelligence Dashboard
+- This weeks most critical CVEs
+- Cyber Security News
+- Click [Here](/pages/CTID) 
