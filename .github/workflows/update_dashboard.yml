@@ -1,4 +1,4 @@
-name: Update Threat Intelligence Dashboard
+name: Update Threat Dashboard
 
 on:
   schedule:
@@ -6,27 +6,22 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-dashboard:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
+      - uses: actions/checkout@v3
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-
-      - name: Install Dependencies
-        run: pip install feedparser requests
-
-      - name: Run Update Script
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install feedparser
+      - name: Update dashboard content
         run: python scripts/update_dashboard.py
-
-      - name: Commit and Push Changes
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add index.md
-          git commit -m "Update dashboard with latest CVEs and news"
+          git commit -m "Updated dashboard content" || echo "No updates"
           git push
