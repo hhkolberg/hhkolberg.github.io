@@ -8,17 +8,20 @@
 
 # Professional Experience
 
-**Cyber Engineer**
-*Detect & Respond*
-
 **Vulnerability Analyst**
 *Vulnerability Operations Center*
+
+**Cyber Engineer**
+*Detect & Respond*
 
 **Vulnerability Management**
 
  - Vulnerability Management
- - Documentation
+ - Vulnerability Hunting
  - Processes
+ - Documentation
+ - Reporting
+ - Vulnerability Advisory
 
 --------
 
@@ -72,12 +75,12 @@
 # MyPath
 
 - TryHackMe Public Profile: https://tryhackme.com/p/KaliNetz
-- CompTIA PenTest+ (Ongoing)
-
-- Next Step: OSCP
+- PNPT (Ongoing)
 
 # Qualifications
 
 - C EH
 - Security+
 - Qualys Certified
+- Rapid7
+
